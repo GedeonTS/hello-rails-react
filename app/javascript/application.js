@@ -1,16 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux'
+import { BrowserRouter } from "react-router-dom";
 import store from './redux/configStore'
-import Greetings from './components/Greetings';
+import App from './components/App'
 
-function App() {
-    return (<p><Greetings /></p>);
-}
 
 ReactDOM.render(
     <Provider store={store}>
-        <App />
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
     </Provider>,
     document.getElementById('root'),
 );

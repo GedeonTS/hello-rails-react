@@ -1,10 +1,22 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { useEffect } from 'react';
+import { myAction } from '../redux/reducer';
 
 function Greetings() {
-    const data = useSelector(state => state.id);
-    const id= useSelector(state => state.id);
-    return (<div>{`greeting ${id} :`+ data}this is me</div>)
+    const data = useSelector(state => state.content);
+    const dispatch = useDispatch();
+    useEffect(() => {
+        dispatch(myAction());
+    }, []);
+    return (
+        <div>{
+            console.log(data)
+        }
+            <h1>Hello, {data}!</h1>
+
+        </div>
+    );
 }
 
 export default Greetings

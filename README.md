@@ -1,24 +1,59 @@
-# README
+# Hello-rails-react
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A rails and react app that displays random greetings from database.
 
-Things you may want to cover:
+## Getting Started
 
-* Ruby version
+To get a local copy up and running follow these simple example steps.
 
-* System dependencies
+- get the directory that you want to clone the repository.
+- open the command prompt in this directory.
+- write `git clone https://github.com/GedeonTS/hello-rails-react.git`.
+- go to the repository folder in your command prompt `e-Wallet`.
+- Open terminal in that folder run `bundle install`.
+- run `rails server` to start the App.
 
-* Configuration
+### Run Linters tests
+To track linter errors locally follow these steps:  
 
-* Database creation
+Download all the dependencies run:
+```
+$ bundle install
+```
 
-* Database initialization
+Track CSS linter errors run:
+```
+$ npx stylelint "**/*.{css,scss}"
+```
+Track Ruby linter errors run:
+```
+$ Rubocop
+```
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+## Author
 
-* Deployment instructions
+👤 **Author : GEDEON USHINDI**
 
-* ...
+- GitHub: [@GedeonTS](https://github.com/GedeonTS)
+- Twitter: [@Gedeon191](https://twitter.com/Gedeon191)
+- LinkedIn: [Ushindi Gedeon](https://linkedin.com/in/ushindi-gedeon)
+
+
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/GedeonTS/hello-rails-react.git 
+This project is intended to be a safe, welcoming space for collaboration, and contributors are welcome.
+Fill free to reach us or contact in the issue page.
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+
+## Acknowledgments
+
+- [MICROVERSE](https://microverse.org)
+
+
+
